@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(103, 37, 168, 1);
+  padding-bottom: 48px;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 24px;
+  border-radius: 24px 24px 0 0;
+  background: rgba(246, 246, 250, 1);
+  position: absolute;
+  top: 85px;
+  left: 0;
+}
+
+.menu {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #ffffff;
+  margin-left: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main-logo {
+  cursor: pointer;
+}
+
+.search {
+  position: relative;
+}
+.search i {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  padding: 14px 2%;
+}
+
+.search i:hover {
+  width: 100%;
+  height: 100vh;
+}
+
+.search input {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+  padding-left: 3%;
+  outline: none;
+  font-size: 18px;
+  border-color: transparent;
+}
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search input:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.search input:focus {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.search-main {
+  border-radius: 36px;
+  width: 970px;
+  height: 40px;
+}
+
+.search-logo {
+  background: url(/img/Search.svg) no-repeat;
+  z-index: 999;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.profile,
+.basket {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.profile:hover,
+.basket:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.basket .basket-logo {
+  pointer-events: none;
+}
+
+.container {
+  background-color: rgba(246, 246, 250, 1);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+h1 {
+  background-color: rgba(246, 246, 250, 1);
+  margin: 3%;
+}
+
+.checkbox,
+.label-checkbox,
+.input-checkbox {
+  background-color: rgba(246, 246, 250, 1);
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3%;
+}
+/* 
+.card {
+} */
+
+.productImage {
+  cursor: pointer;
+  position: relative;
+}

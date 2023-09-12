@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basket</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="/img/menu.svg" />
+      </div>
+      <div class="main-logo">
+        <img src="/img/Лого WB.svg" />
+      </div>
+      <div class="search">
+        <input type="search" class="search-main" placeholder="Я ищу..." />
+        <i class="search-logo"></i>
+      </div>
+      <a class="profile" href="#">
+        <img class="profile-logo" src="/img/Profile.svg"></img>
+        Профиль
+      </a>
+      <a class="basket" href="#">
+        <img class="basket-logo" src="/img/Vector.svg"></img>
+        Корзина
+      </a>
+    </header>
+    <div class="container">
+      <h1 class="name-container">Корзина</h1>
+      <div class="checkbox">
+        <input class="input-checkbox" type="checkbox" id="checkboxAll" checked />
+        <label class="label-checkbox" for="checkboxAll">Выбрать все</label>
+      </div>
+      <ul class="allCard">
+        <li class="card">
+        <div class="product-card">
+          <input type="checkbox" id="product-checkbox">
+          <img class="productImage" src="/img/Product image.svg" alt="" srcset="">
+          <p id="productName">Футболка UZcotton мужская</p>
+          <p id="productColor">Цвет: белый</p>
+          <p id="productSize">Размер: 56</p>
+          <p id="productStorage">Коледино WB</p>
+          <p id="productSeller">OOO Вайлдберриз</p>
+          <div class="count"> - 1 + </div>
+          <p id="productAmount">Осталось 2 шт.</p>
+          <input class="input-favouriteCheckbox" type="checkbox" id="favouriteCheckbox" unchecked />
+          <input class="input-basketCheckbox" type="checkbox" id="basketCheckbox" unchecked />
+          <h3 class="product-sum">522 сом</h3>
+          <p class="notSaleSum">1000</p>
+        </div>
+      </li>
+      
+      
+      </ul>
+    </div>
+  </body>
+</html>
